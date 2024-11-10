@@ -1,0 +1,138 @@
+/* Mobile-friendly container and body adjustments */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background: #f4f4f9;
+    padding: 0 10px; /* Adding some padding on mobile */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  
+  /* Fixed Navigation Styling */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 900px;
+    background-color: #0071c5;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Adding space between links */
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  nav ul li a:hover {
+    background-color: #005da8;
+    border-radius: 8px;
+  }
+  
+  /* Content Styling */
+  .content {
+    padding: 20px;
+  }
+  
+  .section {
+    display: none;
+    opacity: 0;
+    color: #005da8;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  thead th {
+    background-color: #0071c5;
+    color: #fff;
+    padding: 8px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  td, th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      gap: 5px; /* Reducing space between links on mobile */
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  
+    table, th, td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+  
+  /* Make Table Responsive */
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      overflow-x: auto;
+      display: block; /* Make the table scrollable */
+    }
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #0071c5;
+    color: #fff;
+    width: 70px;
+  }
+  

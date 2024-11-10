@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intel Product Comparison Charts</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('iUltra')">i and Ultra Series</a></li>
+        <li><a href="#" onclick="showSection('suffixes')">Suffixes and SKUs</a></li>
+        <li><a href="#" onclick="showSection('graphics')">Graphics</a></li>
+      </ul>
+    </nav>
+ <button onclick="window.history.back()" class="back-button">Back</button>
+
+
+    For more In-depth and Fun training, visit <a href="https://retailedge.intel.com/50/asmo/landing">Intel Retail Edge</a>
+    
+    <!-- Sections -->
+    <div class="content">
+      <!-- i and Ultra Series Section -->
+      <div id="iUltra" class="section">
+        <h2>Intel Processor Comparison</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Processor Model</th>
+              <th>Description</th>
+              <th>Strengths</th>
+              <th>Target Audience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Intel Core i3</td><td>Entry-level processors, 2-4 cores</td><td>Basic multitasking, office applications, light browsing, HD video playback</td><td>Casual users, basic home office, students</td></tr>
+            <tr><td>Intel Core i5</td><td>Mid-range processors, 4-10 cores</td><td>Moderate multitasking, Full HD content creation, general gaming</td><td>Home users, casual gamers, content creators</td></tr>
+            <tr><td>Intel Core i7</td><td>High-performance processors, 6-12 cores</td><td>Advanced multitasking, high-resolution content creation, serious gaming</td><td>Gamers, creatives, prosumers</td></tr>
+            <tr><td>Intel Core i9</td><td>Premium performance, 8-24 cores</td><td>Heavy multitasking, 4K content creation, high-end gaming</td><td>Power users, professional creators, streamers</td></tr>
+            <tr><td>Intel Ultra 5</td><td>Higher efficiency, comparable to Core i5</td><td>Moderate multitasking, optimized battery life, light productivity</td><td>Mobile users, casual gamers, travel-friendly use</td></tr>
+            <tr><td>Intel Ultra 7</td><td>High efficiency and performance, comparable to Core i7</td><td>Advanced multitasking, great battery life, serious gaming</td><td>Portable performance, mobile creatives, gamers on the go</td></tr>
+            <tr><td>Intel Ultra 9</td><td>Top-tier mobile performance</td><td>Heavy multitasking, professional-grade content creation, mobile gaming</td><td>Portable workstation users, traveling content creators</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Suffixes and SKUs Section -->
+      <div id="suffixes" class="section">
+        <h2>Intel CPU Suffixes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Suffix</th>
+              <th>Example Model</th>
+              <th>Meaning</th>
+              <th>Key Strengths</th>
+              <th>Target Audience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>K</td><td>i7-13700K</td><td>Unlocked for overclocking</td><td>High performance with customization potential</td><td>Enthusiasts, gamers</td></tr>
+            <tr><td>F</td><td>i5-13400F</td><td>No integrated graphics</td><td>Lower cost option for users with a discrete GPU</td><td>Budget-conscious gamers, builders</td></tr>
+            <tr><td>KF</td><td>i9-13900KF</td><td>Unlocked & no integrated graphics</td><td>Customizable high performance, lower cost without graphics</td><td>Enthusiasts with dedicated GPUs</td></tr>
+            <tr><td>G1-G7</td><td>i5-1035G7</td><td>Integrated graphics level (higher = better)</td><td>Better graphics performance</td><td>Light gamers, media consumers</td></tr>
+            <tr><td>T</td><td>i7-10700T</td><td>Low-power variant</td><td>Energy efficient, cooler</td><td>Small form factors, compact builds</td></tr>
+            <tr><td>U</td><td>i5-1135G7</td><td>Ultra-low power</td><td>Great battery life, balanced performance</td><td>Laptops, ultra-thin devices</td></tr>
+            <tr><td>H</td><td>i7-12700H</td><td>High performance for mobile</td><td>Strong mobile processing power</td><td>Gaming laptops, mobile workstations</td></tr>
+            <tr><td>HX</td><td>i9-12950HX</td><td>Extreme mobile performance</td><td>Desktop-level power in a laptop</td><td>Professional mobile workstations</td></tr>
+            <tr><td>P</td><td>i7-1280P</td><td>Performance optimized for mobile</td><td>Excellent power efficiency</td><td>Premium thin-and-light laptops</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Graphics Section -->
+      <div id="graphics" class="section">
+        <h2>Intel Graphics Comparison</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Graphics Type</th>
+              <th>Description</th>
+              <th>Key Strengths</th>
+              <th>Target Audience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Intel UHD Graphics</td><td>Basic integrated graphics for everyday tasks</td><td>HD video playback, light photo editing</td><td>Casual users, non-gamers</td></tr>
+            <tr><td>Intel Iris Xe Graphics</td><td>Enhanced integrated graphics, common in mid-range CPUs</td><td>Great for Full HD streaming, entry-level gaming, moderate creative work</td><td>Mainstream users, light gamers, casual creatives</td></tr>
+            <tr><td>Intel Iris Xe Max</td><td>Dedicated graphics for select devices</td><td>Improved multitasking, better graphics performance than Iris Xe</td><td>Mobile power users, portable creatives</td></tr>
+            <tr><td>Intel Arc Graphics (A-Series)</td><td>Discrete GPUs designed by Intel</td><td>High-performance graphics for gaming and content creation</td><td>Gamers, 4K video editors, 3D rendering enthusiasts</td></tr>
+            <tr><td>Intel Arc Pro Graphics</td><td>Professional-grade GPU for workstations</td><td>Optimized for CAD, 3D modeling, content creation</td><td>Professional creators, workstation users</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
